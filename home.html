@@ -9,7 +9,8 @@
     <title>CODEC</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="fluid-icon" href="https://img.icons8.com/ultraviolet/32/000000/code.png" title="CODEC">
+    <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/ultraviolet/32/000000/code.png" title="CODEC">
+<!--    <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/color/48/000000/r.png" />-->
     <!-- <img src="https://img.icons8.com/ultraviolet/32/000000/code.png"/> -->
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -17,48 +18,46 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" type="image/png" href="img/ruet.png"> -->
+        <link rel="stylesheet" href="css/style.css">
+
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<!--
+    <style>
+        textarea{
+            align-content: center;
+        }
+    </style>
+-->
 
 </head>
 
 <body>
+    <div class="fluid">
     <div class="main">
 
         <div class="row">
             <div class="col-sm-12">
                 <nav class="navbar navbar-inverse navbar-fixed-top nbar">
-                    <!-- <div class="navbar-header">
-      <a class="navbar-brand lspace" href="home.php">RUET OJ</a>
-    </div> -->
                     <!-- Image and text -->
                     <nav class="navbar navbar-light bg-light">
                         <a class="navbar-brand" href="home.html">
                             <img src="download (1).png" width="30" height="30" class="d-inline-block align-top" alt="">
                             <!-- <i class="fas fa-laptop-code"></i> -->CODEC
-                            
+
                         </a>
-<!--                        <h3>CODEC</h3>-->
+                        <!--                        <h3>CODEC</h3>-->
                     </nav>
-<!--
-                    <ul class="nav navbar-nav">
-                        <li class="space"><a href="compiler.php"><i class="fa fa-code ispace"></i>Compiler</a></li>
-                        <li class="space"><a href="archive.php"><i class="fa fa-archive ispace"></i>Problem Archive</a></li>
-                        <li class="space"><a href="contest.php"><i class="fa fa-cogs ispace"></i>Contests</a></li>
-
-
-                    </ul>
--->
-
                 </nav>
             </div>
         </div>
 
-
+<!--<div class="justified">-->
         <div class="row log">
             <div class="col-sm-10">
                 <div class="">
-                    <h3 style="text-align:center;">Online Compiler</h3>
+                    <h3 style="color: darkslategrey;">Online Compiler</h3><br>
                 </div>
             </div>
 
@@ -71,28 +70,24 @@
             </div>
 
         </div>
-
-
-
-
         <div class="row cspace">
             <div class="col-sm-8">
                 <div class="form-group">
-                    <form action="compile.php" id="form" name="f2" method="POST">
-                        <center><label for="lang">Choose Language</label></center>
+                    <form action="compile.html" id="form" name="f2" method="POST">
+                        <center><label for="lang">Choose Language</label></center><br>
 
-                        <center><select class="form-control" name="language">
-                            <option value="c">C</option>
-                            <option value="cpp">C++</option>
-                            <!-- <option value="cpp11">C++11</option> -->
-                            <option value="python">Python</option>
+                        <div class="justified"><select class="form-control" name="language">
+                                <option value="c">C</option>
+                                <option value="cpp">C++</option>
+                                <!-- <option value="cpp11">C++11</option> -->
+                                <option value="python">Python</option>
 
 
-                        </select></center><br><br>
+                            </select></div><br><br>
 
-                        <center><label for="ta">Write Your Code</label></center>
+                        <center><label for="ta">Write Your Code</label></center><br>
                         <center><textarea class="form-control" name="code" rows="10" cols="50"></textarea></center><br><br>
-                        <center><label for="in">Enter Your Input</label></center>
+                        <center><label for="in">Enter Your Input</label></center><br>
                         <center><textarea class="form-control" name="input" rows="10" cols="50"></textarea></center><br><br>
                         <center><input type="submit" id="st" class="btn btn-success" value="Run Code"></center><br><br><br>
 
@@ -141,65 +136,18 @@
 
                     <center><label for="out">Output</label></center>
                     <center><textarea id='div' class="form-control" name="output" rows="10" cols="50"></textarea></center><br><br>
-
-                    <!--<script>
-"use strict";
-function submitForm(oFormElement)
-{
-  var xhr = new XMLHttpRequest();
-  var display=document.getElementById('div');
-  xhr.onload = function(){ display.innerHTML=xhr.responseText; }
-  xhr.open (oFormElement.method, oFormElement.action, true);
-  xhr.send (new FormData (oFormElement));
-  return false;
-}
-</script>-->
-                    <!--<label for="out">Output</label>
-<textarea id='div' class="form-control" name="output" rows="10" cols="50"></textarea><br><br>-->
-
-
-
-
                 </div>
             </div>
-
             <div class="col-sm-4">
-
-
             </div>
         </div>
+    </div>
     </div>
     <br><br><br>
     <div class="area">
         <div class="well foot">
             <div class="row area">
-                <!-- <div class="col-sm-3"> -->
-                <!-- BEGIN: Powered by Supercounters.com -->
-                <!-- <center><script type="text/javascript" src="http://widget.supercounters.com/online_i.js"></script><script type="text/javascript">sc_online_i(1360839,"ffffff","e61c1c");</script><br><noscript><a href="http://www.supercounters.com/">Free Online Counter</a></noscript>
-</center> -->
-                <!-- END: Powered by Supercounters.com -->
-
-                <!-- </div> -->
-
-                <!-- <div class="col-sm-5">
-
-
-<div class="fm">
-
-<b>Beta Version-2016</b><br>
-<b>Developed By Ashadullah Shawon</b>
-
-</div>
-</div> -->
-
-
                 <div class="col-sm-4">
-                    <!-- <?php
-date_default_timezone_set("Asia/Dhaka");
- $t=date("H:i:s");
-echo"<b>Server Time:  $t</b>";
-
-?> -->
                     <script type="text/javascript">
                         var myDate = new Date.now();
                         document.write("Time : " + myDate + "<br>");
@@ -209,6 +157,9 @@ echo"<b>Server Time:  $t</b>";
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
